@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andi Irzan | Cyber Dev</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body data-theme="dark" class="loading">
+    <!-- Loader Cyberpunk -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="neon-circle"></div>
+            <p class="glow">Initializing System...</p>
+        </div>
+    </div>
+
+    <!-- Dark/Light Mode Toggle -->
+    <button id="theme-toggle" class="theme-toggle">
+        <span class="moon">🌙</span>
+        <span class="sun">☀️</span>
+    </button>
+
+    <header class="hero">
+        <div class="container">
+             <!-- Profil dengan efek cyberpunk -->
+             <div class="profile-container">
+                <img src="assets/images/profile/andi-profile.png" alt="Andi" class="profile-img">
+                <div class="neon-ring"></div>
+            </div>
+            
+            <h1 class="neon-text glitch">&lt;Andi Irzan/&gt;</h1>
+            <p class="tagline scanline">🚀 Full-stack Developer in Training</p>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>🛠 Tech Arsenal</h3>
+                    <ul class="cyber-list">
+                        <li>HTML5/CSS3 <span class="skill-bar" style="width: 85%"></span></li>
+                        <li>JavaScript (ES6+) <span class="skill-bar" style="width: 70%"></span></li>
+                        <li>C++ Fundamentals <span class="skill-bar" style="width: 60%"></span></li>
+                        <li>Node.js Basics <span class="skill-bar" style="width: 65%"></span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/IrzanAkbar" class="social-btn hologram">
+                    <img src="assets/images/icons/github.svg" alt="GitHub">
+                    <span class="hologram-text">GitHub</span>
+                </a>
+                <a href="https://instagram.com/zannonly_" class="social-btn hologram">
+                    <img src="assets/images/icons/instagram.svg" alt="Instagram">
+                    <span class="hologram-text">Instagram</span>
+                </a>
+                <a href="https://tiktok.com/@zan.ae/" class="social-btn hologram">
+                    <img src="assets/images/icons/tiktok.svg" alt="TikTok">
+                    <span class="hologram-text">TikTok</span>
+                </a>
+                <a href="https://discord.com/users/780349670509248562" class="social-btn hologram">
+                    <img src="assets/images/icons/discord.svg" alt="Discord">
+                    <span class="hologram-text">Discord</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="projects"> 
+        <div class="container">
+            <h2 class="section-title glitch-text" data-text="🚀 Cyber Creations">🚀 Cyber Creations</h2>
+            
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <img src="assets/images/projects/searchengine.png" alt="AI Search Engine" class="project-image">
+                        <div class="project-overlay">
+                            <h3 class="project-title">AI Search Engine</h3>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="tech-stack">
+                            <span>TypeScript</span>
+                        </div>
+                        <p class="project-description">A cutting-edge search engine powered by artificial intelligence</p>
+                        <div class="project-links">
+                            <a href="https://Hat.baby" class="demo-btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <img src="assets/images/projects/hatai.png" alt="AI Chat" class="project-image">
+                        <div class="project-overlay">
+                            <h3 class="project-title">AI Chat & Text-to-Image</h3>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <div class="tech-stack">
+                            <span>JavaScript</span>
+                            <span>TypeScript</span>
+                            <span>CSS</span>
+                        </div>
+                        <p class="project-description">Advanced AI chatbot with multiple models and image generation</p>
+                        <div class="project-links">
+                            <a href="https://zap.web.id" class="demo-btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terminal Section -->
+    <section class="terminal-section">
+        <div class="container">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+                    <span class="terminal-title">zannonly@portfolio: ~</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-output" id="terminal-output">
+                        <p>> Welcome to Andi Irzan Akbar Portfolio Terminal!</p>
+                        <p>> Type <span class="command">help</span> to start.</p>
+                    </div>
+                    <div class="terminal-input">
+                        <span>> </span>
+                        <input 
+                            type="text" 
+                            id="terminal-command" 
+                            placeholder="Type command here..." 
+                            autocomplete="off"
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Section -->
+  <!-- Integrasi GitHub API -->
+  <section class="github-feed">
+    <h2 class="section-title hologram-text">🔮 Live GitHub Feed</h2>
+    
+    <!-- GitHub Stats -->
+    <img 
+      src="https://github-readme-stats.vercel.app/api?username=IrzanAkbar&show_icons=true&theme=dark&bg_color=0a0a12&title_color=00f3ff&text_color=ffffff&icon_color=bc00dd&border_color=00ff41" 
+      alt="GitHub Stats"
+      class="github-stats"
+    >
+  
+    <!-- Top Languages -->
+    <img 
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=IrzanAkbar&layout=compact&theme=dark&bg_color=0a0a12&title_color=00f3ff&text_color=ffffff&border_color=00ff41" 
+      alt="Top Languages"
+      class="github-langs"
+    >
+  
+    <!-- GitHub Activity -->
+    <div class="activity-grid" id="github-activity"></div>
+  
+    <!-- GitHub Repos -->
+    <div class="repo-grid" id="github-repos"></div>
+  </section>
+  
+   <!-- Timeline Pendidikan -->
+<section class="learning-timeline">
+  <div class="container">
+      <h2 class="section-title hologram-text">⏳ Education Journey</h2>
+      <div class="timeline">
+          <div class="timeline-item">
+              <div class="timeline-date glitch">2017</div>
+              <div class="timeline-content cyber-card">
+                  <h3>Started Elementary School (SD)</h3>
+                  <p>Learned basic subjects and built a strong foundation</p>
+                  <div class="timeline-progress"></div>
+              </div>
+          </div>
+          <div class="timeline-item">
+              <div class="timeline-date glitch">2023</div>
+              <div class="timeline-content cyber-card">
+                  <h3>Entered Junior High School (SMP)</h3>
+                  <p>Focusing on more advanced subjects and developing skills</p>
+                  <div class="timeline-progress"></div>
+              </div>
+          </div>
+          <div class="timeline-item">
+              <div class="timeline-date glitch">2024</div>
+              <div class="timeline-content cyber-card">
+                  <h3>Currently in 2nd Grade of Junior High School</h3>
+                  <p>Exploring more subjects and working on personal growth</p>
+                  <div class="timeline-progress"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+    <!-- Testimonial Section -->
+<section class="testimonials">
+  <div class="container">
+      <h2 class="section-title hologram-text">💬 Client & Mentor Words</h2>
+      
+      <div class="testimonial-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card glitch-card">
+              <div class="testimonial-content">
+                  <div class="quote-container">
+                      <p class="quote">"Luar biasa! Sangat profesional dan kreativitas tingkat tinggi."</p>
+                  </div>
+                  <div class="author-info">
+                      <img src="assets/images/profile/jane.jpg" alt="Mentor" class="author-img">
+                      <div class="author-details">
+                          <h4 class="author-name">Jane Doe</h4>
+                          <p class="author-role">CEO TechNova</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card glitch-card">
+              <div class="testimonial-content">
+                  <div class="quote-container">
+                      <p class="quote">"Kerjasama yang menyenangkan. Semua ide terimplementasi sempurna!"</p>
+                  </div>
+                  <div class="author-info">
+                      <img src="assets/images/profile/john.jpg" alt="Client" class="author-img">
+                      <div class="author-details">
+                          <h4 class="author-name">John Smith</h4>
+                          <p class="author-role">Founder Creative Labs</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title hologram-text">📡 Transmit Message</h2>
+            
+            <form class="cyber-form">
+                <div class="form-group">
+                    <input type="text" id="name" class="cyber-input" required>
+                    <label for="name" class="cyber-label">Your Codename</label>
+                    <div class="cyber-underline"></div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" id="email" class="cyber-input" required>
+                    <label for="email" class="cyber-label">Encryption Key</label>
+                    <div class="cyber-underline"></div>
+                </div>
+                
+                <div class="form-group">
+                    <textarea id="message" class="cyber-input" rows="5" required></textarea>
+                    <label for="message" class="cyber-label">Transmission Content</label>
+                    <div class="cyber-underline"></div>
+                </div>
+                
+                <button type="submit" class="cyber-button hologram">
+                    <span class="glow"></span>
+                    <span class="content">Initiate Transmission</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <script type="module" src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/modules/particles.js"></script>
+    <script type="module" src="assets/js/modules/terminal.js"></script>
+</body>
+</html>
