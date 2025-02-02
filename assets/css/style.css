@@ -142,7 +142,6 @@ body {
   100% { top: 100%; }
 }
 
-
 .neon-text {
     font-size: 4rem;
     background: linear-gradient(45deg, var(--neon-cyan), var(--cyber-purple));
@@ -576,7 +575,6 @@ html {
     box-shadow: 0 0 30px var(--matrix-green);
 }
 
-
 @keyframes glow-animation {
     0% { transform: translateX(-100%); }
     100% { transform: translateX(100%); }
@@ -803,7 +801,7 @@ html {
   }
 
   /* GitHub Feed */
-.github-feed {
+  .github-feed {
     padding: 2rem;
     background: rgba(0, 0, 0, 0.3);
     border: 2px solid #00f3ff;
@@ -904,3 +902,36 @@ html {
   body:not(.loading) .main-content {
     display: block;
   }
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .neon-text {
+        font-size: 2.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr; /* Stack skills vertically */
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* Stack projects vertically */
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr; /* Stack testimonials vertically */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .hero {
+        flex-direction: row;
+    }
+
+    .neon-text {
+        font-size: 3rem;
+    }
+}
